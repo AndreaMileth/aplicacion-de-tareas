@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>aplicacion de tarea</title>
+   
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    
+    <nav class="navbar navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Aplicacion de tareas</a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row my-5">
+        <div class="col-md-4">
+
+          <div class="card">
+            <div class="card-body">
+            
+              <form id="formTask">
+                <div class="form-group">
+                  <input type="text" id="title" placeholder="añadir tarea" class="form-control">
+                </div>
+                <div class="form-group">
+                  <textarea id="description" cols="30" rows="10" class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Guardar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-8">
+          <div id="tasks"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
